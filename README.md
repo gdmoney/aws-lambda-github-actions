@@ -10,6 +10,7 @@ Integrate GitHub and AWS Lambda to audo deploy on code changes.
   
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
 
+```
 name: update-lambda
 
 on:
@@ -29,7 +30,7 @@ jobs:
     steps:
     - name: Checkout source code
       uses: actions/checkout@v2
-    
+
     - name: Zip folder
       uses: papeloto/action-zip@v1
       with:
@@ -58,3 +59,4 @@ jobs:
         aws lambda update-function-code \
           --function-name  product-availability-checker \
           --zip-file fileb://lambda.zip
+```
