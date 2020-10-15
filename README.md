@@ -40,8 +40,8 @@ jobs:
     - name: Zip folder
       uses: papeloto/action-zip@v1
       with:
-        files: AWS
-        dest: lambda.zip
+        files: FOLDER
+        dest: FILENAME.zip
 
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
@@ -52,7 +52,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install awscli
-        
+
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
@@ -63,6 +63,6 @@ jobs:
     - name: Run
       run: |
         aws lambda update-function-code \
-          --function-name  product-availability-checker \
-          --zip-file fileb://lambda.zip
+          --function-name  FUNCTION_NAME \
+          --zip-file fileb://FILENAME.zip
 ```
