@@ -30,7 +30,6 @@ on:
     - master
 
 jobs:
-  
   deploy:
     runs-on: ubuntu-latest
     steps:
