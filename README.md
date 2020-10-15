@@ -9,7 +9,7 @@ Integrate GitHub and AWS Lambda to audo deploy an existing function on code chan
   - New secret > Name: `AWS_REGION`, Value: ... > Add secret
   
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
-  - modify the parameters below and then copy & paste
+  - modify the parameters below and then copy & paste in the editor
 
 ### Parameters
 `files` - folder containing the function code and any dependencies  
