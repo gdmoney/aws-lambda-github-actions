@@ -2,13 +2,19 @@
 
 Integrate GitHub and AWS Lambda to audo deploy on code changes.
 
-## Usage
+### Usage
 - GitHub > Settings > Secrets >  
   - New secret > Name: `AWS_ACCESS_KEY_ID`, Value ... > Add secret  
   - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value ... > Add secret
   - New secret > Name: `AWS_REGION`, Value ... > Choose a region
   
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
+
+### Parameters
+`files` - folder containing the code and any required libraries
+`dest` - filename
+`--function-name` - name of the existing Lambda function
+`--zip-file` - zip filename
 
 ```
 name: update-lambda
