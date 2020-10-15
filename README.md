@@ -11,6 +11,9 @@ Integrate GitHub and AWS Lambda to audo deploy an existing function on code chan
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
   - modify the parameters below and then copy & paste in the editor
 
+- Lambda function will be updated every Python code is changed
+- deployments can also be automated by scheduling to run the workflow at specific times using `schedule` and `cron` commands
+
 ### Parameters
 `files` - folder containing the function code and any dependencies  
 `dest` - filename  
