@@ -1,4 +1,4 @@
-# aws-lambda-github-actions
+# AWS Lambda and GitHub Actions integration
 
 Integrate GitHub and AWS Lambda to audo deploy an existing function on code changes.
 
