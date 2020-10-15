@@ -11,10 +11,10 @@ Integrate GitHub and AWS Lambda to audo deploy on code changes.
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
 
 ### Parameters
-`files` - folder containing the code and any required libraries
-`dest` - filename
-`--function-name` - name of the existing Lambda function
-`--zip-file` - zip filename
+`files` - folder containing the code and any required libraries  
+`dest` - filename  
+`--function-name` - name of the existing Lambda function  
+`--zip-file` - zip filename  
 
 ```
 name: update-lambda
