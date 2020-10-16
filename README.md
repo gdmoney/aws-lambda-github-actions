@@ -43,7 +43,7 @@ jobs:
     - name: Zip folder
       uses: papeloto/action-zip@v1
       with:
-        files: FOLDER
+        files: FOLDER_NAME
         dest: FILENAME.zip
 
     - name: Set up Python 3.8
