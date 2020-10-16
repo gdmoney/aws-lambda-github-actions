@@ -15,10 +15,10 @@ Integrate GitHub and AWS Lambda to auto deploy an existing function on code chan
 - deployments can also be automated by scheduling to run the workflow at specific times using `schedule` and `cron` commands
 
 ### Parameters
-`files` - folder containing the function code and any dependencies  
-`dest` - filename  
-`--function-name` - name of the existing Lambda function  
-`--zip-file` - zip filename  
+**`files`** - folder containing the function code and any dependencies  
+**`dest`** - filename  
+**`--function-name`** - name of the existing Lambda function  
+**`--zip-file`** - zip filename  
 
 ```
 name: update-lambda
