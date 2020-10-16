@@ -19,6 +19,7 @@ Integrate GitHub and AWS Lambda to auto deploy an existing function on code chan
 **`dest`** - filename  
 **`--function-name`** - name of the existing Lambda function  
 **`--zip-file`** - zip filename  
+if using Windows, replace `\` with `^`
 
 ```
 name: update-lambda
