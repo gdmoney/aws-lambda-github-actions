@@ -29,7 +29,7 @@ on:
     branches:
     - master
     paths:
-    - '**.py'
+    - 'lambda_function.py'
   pull_request:
     branches:
     - master
