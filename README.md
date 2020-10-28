@@ -59,7 +59,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install awscli
         
-    - name: Configure AWS credentials
+    - name: Setup AWS env
       uses: aws-actions/configure-aws-credentials@v1
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
