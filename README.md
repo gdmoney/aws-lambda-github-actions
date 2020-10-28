@@ -11,7 +11,7 @@ Integrate GitHub and AWS Lambda to auto deploy an existing function on code chan
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
   - modify the parameters below and then copy & paste in the editor
 
-- Lambda function will be updated every time the `lambda_function` Python code or this file are modified
+- Lambda function will be updated every time the `lambda_function.py` Python code or `update-lambda.yml` file are modified
 - deployments can also be automated by scheduling to run the workflow at specific times using `schedule` and `cron` commands
 
 ### Parameters
