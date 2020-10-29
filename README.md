@@ -1,6 +1,6 @@
 # AWS Lambda and GitHub Actions Integration
 
-Integrate GitHub and AWS Lambda to auto deploy an existing function on code changes.
+Integrates GitHub and AWS Lambda to auto deploy an existing function on code changes.
 
 ### Usage
 - GitHub > Settings > Secrets >  
