@@ -48,7 +48,7 @@ jobs:
         recursive: true
         dest: lambda.zip
 
-    - name: Set up Python 3.8
+    - name: Setup Python 3.8
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
@@ -58,7 +58,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install awscli
         
-    - name: Setup AWS env
+    - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
