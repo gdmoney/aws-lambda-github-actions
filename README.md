@@ -25,13 +25,13 @@ name: update-lambda
 on:
   push:
     branches:
-    - maain
+    - main
     paths:
     - 'AWS/lambda_function.py'
     - '.github/workflows/update-lambda.yml'
   pull_request:
     branches:
-    - master
+    - main
 
 jobs:
   
