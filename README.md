@@ -4,9 +4,9 @@ Integrates GitHub and AWS Lambda to auto deploy an ***existing*** function on co
 
 ### Usage
 - GitHub > Settings > Secrets >  
-  - New secret > Name: `AWS_ACCESS_KEY_ID`, Value: ... > Add secret  
-  - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value: ... > Add secret
-  - New secret > Name: `AWS_REGION`, Value: ... > Add secret
+  - New secret > Name: `AWS_ACCESS_KEY_ID`, Value: `...` > Add secret  
+  - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value: `...` > Add secret
+  - New secret > Name: `AWS_REGION`, Value: `...` > Add secret
   
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
   - modify the parameters below and copy & paste in the editor
