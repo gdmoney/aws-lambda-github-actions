@@ -10,8 +10,7 @@ In the example below, the Lambda function will be updated every time `lambda_fun
   - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value: `...` > Add secret
   - New secret > Name: `AWS_REGION`, Value: `...` > Add secret
   
-- GitHub > Actions > New workflow > set up a workflow yourself
-  - modify the parameters below and copy & paste in the editor
+- GitHub > Actions > New workflow > set up a workflow yourself > modify the parameters below and copy & paste in the editor*
 
 ### Parameters
 - **`files`** - folder containing the function code and any dependencies  
