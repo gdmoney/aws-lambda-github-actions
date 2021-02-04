@@ -1,6 +1,6 @@
 # AWS Lambda and GitHub Actions Integration
 
-Integrates GitHub and AWS Lambda to auto deploy an existing function on code changes.
+Integrates GitHub and AWS Lambda to auto deploy an ***existing*** function on code changes.
 
 ### Usage
 - GitHub > Settings > Secrets >  
@@ -11,7 +11,7 @@ Integrates GitHub and AWS Lambda to auto deploy an existing function on code cha
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
   - modify the parameters below and copy & paste in the editor
 
-- Lambda function will be updated every time the `lambda_function.py` Python code or the `update-lambda.yml` files are modified and changes are pushed to the `main` branch
+- Lambda function will be updated every time `lambda_function.py`, `urls.py`, or `update-lambda.yml` files are modified and changes are pushed to the `master` branch
 
 ### Parameters
 - **`files`** - folder containing the function code and any dependencies  
@@ -25,13 +25,14 @@ name: update-lambda
 on:
   push:
     branches:
-    - main
+    - master
     paths:
     - 'AWS/lambda_function.py'
+    - 'AWS/urls.py'
     - '.github/workflows/update-lambda.yml'
   pull_request:
     branches:
-    - main
+    - master
 
 jobs:
   
