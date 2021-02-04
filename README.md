@@ -30,9 +30,6 @@ on:
     - 'AWS/lambda_function.py'
     - 'AWS/urls.py'
     - '.github/workflows/update-lambda.yml'
-  pull_request:
-    branches:
-    - master
 
 jobs:
   
