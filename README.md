@@ -3,6 +3,8 @@
 Integrates GitHub and AWS Lambda to auto deploy an ***existing*** function on code changes.
 
 ### Usage
+In the example below, the Lambda function will be updated every time `lambda_function.py`, `urls.py`, or `update-lambda.yml` files are modified and changes are pushed to the `master` branch.
+
 - GitHub > Settings > Secrets >  
   - New secret > Name: `AWS_ACCESS_KEY_ID`, Value: `...` > Add secret  
   - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value: `...` > Add secret
@@ -10,8 +12,6 @@ Integrates GitHub and AWS Lambda to auto deploy an ***existing*** function on co
   
 - GitHub > Actions > New workflow > set up a workflow yourself
   - modify the parameters below and copy & paste in the editor
-
-- Lambda function will be updated every time `lambda_function.py`, `urls.py`, or `update-lambda.yml` files are modified and changes are pushed to the `master` branch
 
 ### Parameters
 - **`files`** - folder containing the function code and any dependencies  
