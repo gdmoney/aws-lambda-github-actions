@@ -41,7 +41,7 @@ jobs:
     - name: Zip folder
       uses: papeloto/action-zip@v1
       with:
-        files: AWS/ urls.py
+        files: AWS/urls.py
         recursive: true
         dest: lambda.zip
 
