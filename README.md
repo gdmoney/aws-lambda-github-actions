@@ -27,7 +27,7 @@ on:
     - master
     paths:
     - 'AWS/lambda_function.py'
-    - 'AWS/ urls.py'
+    - 'AWS/urls.py'
     - '.github/workflows/update-lambda.yml'
 
 jobs:
@@ -41,7 +41,7 @@ jobs:
     - name: Zip folder
       uses: papeloto/action-zip@v1
       with:
-        files: AWS/urls.py
+        files: AWS/ urls.py
         recursive: true
         dest: lambda.zip
 
