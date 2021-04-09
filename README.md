@@ -27,7 +27,7 @@ on:
     - master
     paths:
     - 'AWS/lambda_function.py'
-    - 'AWS/urls.py'
+    - 'AWS/ urls.py'
     - '.github/workflows/update-lambda.yml'
 
 jobs:
