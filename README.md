@@ -3,7 +3,7 @@
 Integrates GitHub and AWS Lambda to automate update and redeployment an **existing** Python based function on code changes.
 
 ### Usage
-In the example below, the workflow will run and update the Lambda function every time `lambda_function.py`, `urls.py`, or `update-lambda.yml` files are modified and changes are pushed to the `master` branch. It can also be triggerred manually with the `workflow_dispatch` event.
+In the example below, the workflow will run and update the AWS Lambda function every time `lambda_function.py`, `urls.py`, or `update-lambda.yml` files are modified and changes are pushed to the `master` branch. It can also be triggerred manually with the `workflow_dispatch` event.
 
 - GitHub > Settings > Secrets >  
   - New secret > Name: `AWS_ACCESS_KEY_ID`, Value: `...` > Add secret  
