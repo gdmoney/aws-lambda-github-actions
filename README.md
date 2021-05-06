@@ -1,6 +1,6 @@
 # AWS Lambda and GitHub Actions Integration
 
-Integrates GitHub and AWS Lambda to automate updating and redeployment an **existing** Python based function on code changes.
+Integrates **GitHub** and **AWS Lambda** to automate updating and redeployment an **existing** Python based function on code changes.
 
 ### Usage
 In the example below, the workflow will run and update the AWS Lambda function every time `lambda_function.py`, `urls.py`, or `update-lambda.yml` files are modified and changes are pushed to the `master` branch. It can also be triggerred manually with the `workflow_dispatch` event.
