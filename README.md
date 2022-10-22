@@ -5,10 +5,10 @@ Integrates **GitHub Actions** and **AWS Lambda** to automate updating and redepl
 ### Usage
 In the example below, the workflow will run and update the AWS Lambda function every time `lambda_function.py`, `urls.py`, or `update-lambda.yml` files are modified and changes are pushed to the `master` branch. It can also be triggerred manually with the `workflow_dispatch` event.
 
-- GitHub > Settings > Secrets >  
-  - New secret > Name: `AWS_ACCESS_KEY_ID`, Value: `...` > Add secret  
-  - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value: `...` > Add secret
-  - New secret > Name: `AWS_REGION`, Value: `...` > Add secret
+- GitHub > Settings > Secrets > Actions:
+  - New repository secret > Name: `AWS_ACCESS_KEY_ID`, Value: `...` > Add secret  
+  - New repository secret > Name: `AWS_SECRET_ACCESS_KEY`, Value: `...` > Add secret
+  - New repository secret > Name: `AWS_REGION`, Value: `...` > Add secret
   
 - GitHub > Actions > New workflow > set up a workflow yourself > *modify the parameters below and copy & paste in the editor*
 
